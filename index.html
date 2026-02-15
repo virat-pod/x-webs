@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./icon/x.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="bg-black text-white">
+    <div
+      class="flex flex-col sm:flex-row max-w-[1400px] min-h-screen relative sm:px-2 mx-auto md:px-18 xl:px-18 w-full"
+    >
+      <div
+        class="first flex px-2 flex-row-reverse sm:flex-col w-full sm:w-22 md:w-15 xl:w-66 sm:h-screen shrink-0 sm:sticky top-0 py-2 sm:py-4 xl:pr-6 sm:space-y-3"
+      >
+        <div class="pt-1.5 sm:hidden">
+          <button
+            class="bg-black px-3 rounded-full font-bold border-[1px] border-zinc-700 py-1"
+          >
+            Subscribe
+          </button>
+        </div>
+        <div
+          class="logo invert w-full flex justify-center ml-1 md:ml-0 md:pr-4.5 xl:pl-2 xl:justify-start"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="w-6.5 sm:w-7.5 text-white r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-16y2uox r-lwhw9o"
+          >
+            <g>
+              <path
+                d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="sidebar hidden sm:block flex justify-end">
+          <ul
+            class="flex flex-col w-full gap-0.5 text-[1.3rem] items-end xl:items-start"
+          >
+            <li class="links font-bold">
+              <div class="material-symbols-outlined icons">home</div>
+              <div class="hidden xl:block">Home</div>
+            </li>
+            <li class="links">
+              <span class="material-symbols-outlined icons"> search </span
+              ><span class="hidden xl:block">Emplore</span>
+            </li>
+            <li class="links">
+              <span class="material-symbols-outlined icons">
+                notifications </span
+              ><span class="hidden xl:block">Notifications</span>
+            </li>
+            <li class="links">
+              <span class="material-symbols-outlined icons"> person_add </span
+              ><span class="hidden xl:block">Follow</span>
+            </li>
+            <li class="links">
+              <span class="material-symbols-outlined icons"> mail </span
+              ><span class="hidden xl:block">Chat</span>
+            </li>
+            <li class="links">
+              <span class="material-symbols-outlined icons"> bookmark </span
+              ><span class="hidden xl:block">Bookmarks</span>
+            </li>
+            <li class="links">
+              <span class="material-symbols-outlined icons"> diamond </span
+              ><span class="hidden xl:block">Premium</span>
+            </li>
+            <li class="links">
+              <span class="material-symbols-outlined icons"> person </span
+              ><span class="hidden xl:block">Profile</span>
+            </li>
+            <li class="links">
+              <span class="material-symbols-outlined icons"> pending </span
+              ><span class="hidden xl:block">More</span>
+            </li>
+
+            <li class="flex pt-2 w-full">
+              <!-- Desktop Button -->
+              <button
+                class="hidden xl:block w-full bg-white text-black text-xl font-medium py-3 rounded-full hover:bg-zinc-200 transition-colors duration-100 cursor-pointer"
+              >
+                Post
+              </button>
+            </li>
+            <li class="flex xl:hidden mt-1.5 pr-3.5">
+              <button
+                class="material-symbols-outlined px-1.5 text-black py-1.5 bg-white rounded-full !text-[1.8rem]"
+              >
+                stylus
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="main-profile hover:bg-zinc-900 transition-colors duration-150 p-1 xl:p-2.5 xl:px-4 xl:mt-9 cursor-pointer rounded-full items-center xl:w-full justify-center sm:justify-start xl:justify-between sm:hidden xl:flex"
+        >
+          <!-- Profile Info -->
+          <div class="profile-all-info flex items-center gap-2">
+            <div class="profile-pic flex text-center">
+              <img
+                class="w-16 xl:w-12 rounded-full"
+                src="./icon/chad.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- Hide text on small screens -->
+            <div class="main-profile-info hidden xl:flex flex-col">
+              <h2 class="font-medium text-sm xl:text-base">ChadMen</h2>
+              <p class="text-zinc-500 text-xs xl:text-sm">@chadMen2012</p>
+            </div>
+          </div>
+
+          <!-- Three dots (only desktop) -->
+          <div class="hidden xl:block">
+            <div class="material-symbols-outlined text-zinc-300 !text-[1.2rem]">
+              more_horiz
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="second min-h-screen pb-[7vh] text-white flex-1 min-w-0 lg:max-w-[660px] sm:border-[1px] border-zinc-700 border-y-black"
+      >
+        <div
+          class="section relative sticky top-0 border-b-[1px] border-b-zinc-700 bg-black/40 backdrop-blur-md flex text-center"
+        >
+          <div
+            class="first relative hover:bg-neutral-900 w-1/2 transition-colors duration-200 cursor-pointer font-bold py-3"
+          >
+            For You
+            <div
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-14 h-1 bg-blue-500 rounded-full"
+            ></div>
+          </div>
+          <div
+            class="second hover:bg-neutral-900 transition-colors duration-200 w-1/2 cursor-pointer text-zinc-500 py-3"
+          >
+            Following
+          </div>
+        </div>
+
+        <div class="post-sec flex flex-col pt-4 pb-1 px-5 gap-0.5">
+          <div class="post-text text-center flex gap-2">
+            <img class="w-12 rounded-4xl" src="./icon/chad.jpg" alt="" />
+            <input
+              class="outline-none text-xl text-zinc-300"
+              type="text"
+              placeholder="What's happening?"
+            />
+          </div>
+          <div
+            class="flex text-center ml-12 px-2 py-1 gap-1 text-blue-400 rounded-2xl hover:bg-slate-950 cursor-pointer w-fit"
+          >
+            <span class="material-symbols-outlined !text-[1.1rem] pt-0.5">
+              public
+            </span>
+            <span class="font-medium text-[0.90rem]">Everyone can reply</span>
+          </div>
+          <div class="hr m-2.5"></div>
+          <div class="post-btns flex justify-between text-center">
+            <div class="btns text-blue-400 flex gap-2 sm:pl-12 h-fit">
+              <span class="material-symbols-outlined icon-btns"> image </span>
+              <span class="material-symbols-outlined icon-btns"> gif_box </span>
+              <span class="material-symbols-outlined icon-btns">
+                person_pin_circle
+              </span>
+              <span class="material-symbols-outlined icon-btns"> blur_on </span>
+              <span class="material-symbols-outlined icon-btns">
+                sentiment_satisfied
+              </span>
+              <span
+                class="material-symbols-outlined text-blue-900 icon-btns cursor-auto"
+              >
+                location_on
+              </span>
+            </div>
+
+            <div class="post-btn mb-2 flex text-center justify-center">
+              <button
+                class="py-1.5 hover:bg-zinc-400 transition-colors duration-300 cursor-pointer px-4.5 rounded-4xl bg-zinc-500 text-black font-medium"
+              >
+                Post
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hr h-[1.2px] my-1"></div>
+
+        <div class="social flex flex-col">
+          <div class="social-card border-b-[1px] border-b-zinc-700">
+            <div class="social-content flex gap-2.5 pl-1.5 sm:p-4 py-2.5 pb-3">
+              <div class="social-img">
+                <img
+                  class="w-9 rounded-full cursor-pointer"
+                  src="./icon/elon.png"
+                  alt=""
+                />
+              </div>
+              <div class="social-info flex flex-col w-full">
+                <div class="flex items-center gap-1">
+                  <span class="font-semibold">Elon Musk</span>
+
+                  <img
+                    class="w-4.5"
+                    src="./icon/bluetick.svg"
+                    alt="Verified account"
+                  />
+
+                  <span class="text-zinc-600">@elonmusk</span>
+                </div>
+                <div class="post-info flex flex-col gap-2 pb-3">
+                  <p class="post-title max-w-full">
+                    I spent 44$ billion on this app and lizard boy just decided
+                    to hit copy and paste. It's personal now. See you in the
+                    cage. Zuck.
+                  </p>
+                </div>
+                <div class="soical-gain flex justify-between text-zinc-500">
+                  <div class="btns flex w-2/4">
+                    <ul class="flex text-center text-[0.8rem] gap-4.5 sm:gap-8">
+                      <li
+                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          comment </span
+                        ><span class="py-0.5">107</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-green-600 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          repeat </span
+                        ><span class="py-0.5">4</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-red-600 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          favorite </span
+                        ><span class="py-0.5">56</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          bar_chart </span
+                        ><span class="py-0.5">302</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="share flex gap-4">
+                    <span
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                    >
+                      bookmark
+                    </span>
+                    <span
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                    >
+                      share
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="social-card border-b-[1px] border-b-zinc-700">
+            <div class="social-content flex gap-2.5 pl-1.5 sm:p-4 py-2.5 pb-3">
+              <div class="social-img">
+                <img
+                  class="w-9 rounded-full cursor-pointer"
+                  src="./icon/mark.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="social-info flex flex-col w-full">
+                <div class="flex items-center gap-1">
+                  <span class="font-semibold">Mark Zuckerburg</span>
+
+                  <img
+                    class="w-4.5"
+                    src="./icon/bluetick.svg"
+                    alt="Verified account"
+                  />
+
+                  <span class="text-zinc-600">@markzuckerburg</span>
+                </div>
+                <div class="post-info flex flex-col gap-2 pb-3">
+                  <p class="post-title max-w-full">Does Mark know that?</p>
+                  <div class="social-post">
+                    <img
+                      class="post-image"
+                      src="./icon/dev_meme.jpg"
+                      alt="chad"
+                    />
+                  </div>
+                </div>
+                <div class="soical-gain flex justify-between text-zinc-500">
+                  <div class="btns flex w-2/4">
+                    <ul class="flex text-center text-[0.8rem] gap-4.5 sm:gap-8">
+                      <li
+                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          comment </span
+                        ><span class="py-0.5">2.1M</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-green-600 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          repeat </span
+                        ><span class="py-0.5">17</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-red-600 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          favorite </span
+                        ><span class="py-0.5">56L</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          bar_chart </span
+                        ><span class="py-0.5">1B+</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="share flex gap-4">
+                    <span
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                    >
+                      bookmark
+                    </span>
+                    <span
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                    >
+                      share
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="social-card border-b-[1px] border-b-zinc-700">
+            <div class="social-content flex gap-2.5 pl-1.5 sm:p-4 py-2.5 pb-3">
+              <div class="social-img">
+                <img
+                  class="w-9 rounded-full cursor-pointer"
+                  src="./icon/linus_torvalds.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="social-info flex flex-col w-full">
+                <div class="flex items-center gap-1">
+                  <span class="font-semibold">Linus torvarlds</span>
+
+                  <img
+                    class="w-4.5"
+                    src="./icon/bluetick.svg"
+                    alt="Verified account"
+                  />
+
+                  <span class="text-zinc-600">@linustorvarlds</span>
+                </div>
+                <div class="post-info flex flex-col gap-2 pb-3">
+                  <p class="post-title max-w-full">F*ck you NVIDIA</p>
+                  <div class="social-post">
+                    <img
+                      class="post-image"
+                      src="./icon/linus_meme.jpg"
+                      alt="chad"
+                    />
+                  </div>
+                </div>
+                <div class="soical-gain flex justify-between text-zinc-500">
+                  <div class="btns flex w-2/4">
+                    <ul class="flex text-center text-[0.8rem] gap-4.5 sm:gap-8">
+                      <li
+                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          comment </span
+                        ><span class="py-0.5">2m+</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-green-600 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          repeat </span
+                        ><span class="py-0.5">12L</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-red-600 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          favorite </span
+                        ><span class="py-0.5">2.1B</span>
+                      </li>
+                      <li
+                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                      >
+                        <span
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                        >
+                          bar_chart </span
+                        ><span class="py-0.5">5B</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="share flex gap-4">
+                    <span
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                    >
+                      bookmark
+                    </span>
+                    <span
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                    >
+                      share
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mobile-footer sm:hidden h-[6.5vh] fixed bottom-0 w-full bg-black/85"
+      >
+        <ul class="h-full px-6 flex justify-between items-center">
+          <li class="">
+            <span class="material-symbols-outlined icons"> home </span>
+          </li>
+          <li class="">
+            <span class="material-symbols-outlined icons"> search </span>
+          </li>
+          <li class="">
+            <span class="material-symbols-outlined icons"> planet </span>
+          </li>
+          <li class="">
+            <span class="material-symbols-outlined icons"> notifications </span>
+          </li>
+          <li class="">
+            <span class="material-symbols-outlined icons"> email </span>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="third pl-5 basis-[21rem] shrink-0 min-w-0 gap-0.5 hidden lg:flex flex-col pb-20"
+      >
+        <div class="searchs sticky top-0 z-10 bg-black py-1">
+          <div
+            class="search gap-1 flex text-center p-2 rounded-full border-[1px] border-zinc-700 bg-black"
+          >
+            <span
+              class="material-symbols-outlined text-gray-500 pl-0.5 !text-xl"
+            >
+              search
+            </span>
+            <input
+              class="outline-none font-light w-full min-w-0"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 min-w-0">
+          <div
+            class="bg-black py-3 px-6 rounded-2xl border-[1px] border-zinc-700"
+          >
+            <div class="title flex text-center gap-2">
+              <h2 class="font-bold text-[1.1rem]">Subscribe to Premium</h2>
+              <span
+                class="bg-green-800 hidden xl:flex p-0.5 px-2 rounded-xl text-green-300"
+                >50% off</span
+              >
+            </div>
+            <div
+              class="para font-normal text-[0.9rem] xl:text-[1rem] leading-5 mt-3"
+            >
+              Subscribe to unlock new features and if eligible, receive a share
+              of revenue.
+            </div>
+            <button
+              class="bg-blue-400 p-1.5 px-6 rounded-2xl mt-4 cursor-pointer hover:bg-blue-500"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="line bg-zinc-600 my-0.5 h-[2px] rounded-2xl"></div>
+
+          <div
+            class="trend flex flex-col border-[1px] border-zinc-700 py-3 gap-4 rounded-2xl"
+          >
+            <h1 class="text-xl font-bold px-4">What's happening</h1>
+            <div class="cards">
+              <div class="card pl-4 pr-2">
+                <div class="card-info flex flex-col">
+                  <p class="text-[12px] text-zinc-500">
+                    Sports &bull; Trending
+                  </p>
+                  <h2 class="font-bold text-[0.9rem] xl:text-[1rem]">
+                    #ausvszim
+                  </h2>
+                </div>
+                <div class="report">
+                  <span class="material-symbols-outlined card-more">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+              <div class="card pl-4 pr-2">
+                <div class="card-info flex flex-col">
+                  <p class="text-[12px] text-zinc-500">
+                    entairtainment &bull; industry
+                  </p>
+                  <h2 class="font-bold text-[0.9rem] xl:text-[1rem]">
+                    #ValentineDay
+                  </h2>
+                </div>
+                <div class="report">
+                  <span class="material-symbols-outlined card-more">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+              <div class="card pl-4 pr-2">
+                <div class="card-info flex flex-col">
+                  <p class="text-[12px] text-zinc-500">
+                    entairtainment &bull; industry
+                  </p>
+                  <h2 class="font-bold text-[0.9rem] xl:text-[1rem]">
+                    #YuziShefaliStoryTV
+                  </h2>
+                </div>
+                <div class="report">
+                  <span class="material-symbols-outlined card-more">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+              <div class="card pl-4 pr-2">
+                <div class="card-info flex flex-col">
+                  <p class="text-[12px] text-zinc-500">trending in india</p>
+                  <h2 class="font-bold text-[0.9rem] xl:text-[1rem]">
+                    रियान पराग
+                  </h2>
+                </div>
+                <div class="report">
+                  <span class="material-symbols-outlined card-more">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+
+              <div class="card pl-4">
+                <p class="text-blue-400">Show More</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="suggestion border-[1px] border-zinc-700 py-3 flex flex-col gap-3 rounded-2xl"
+          >
+            <h1 class="font-bold text-xl pl-4">Who to follow</h1>
+            <div class="card pl-4 pr-4">
+              <div class="profile flex items-center gap-2">
+                <img
+                  class="w-12 h-12 rounded-full object-cover"
+                  src="./icon/chad.jpg"
+                  alt="chad"
+                />
+                <div class="profile-info">
+                  <div class="name flex gap-1 items-center">
+                    <h2 class="hover:underline font-bold">Chad Men</h2>
+                    <span>
+                      <object
+                        class="w-4"
+                        data="./icon/bluetick.svg"
+                        type=""
+                      ></object>
+                    </span>
+                  </div>
+                  <p class="text-zinc-500">@officialChad</p>
+                </div>
+              </div>
+              <div class="follow">
+                <button class="follow-btn">Follow</button>
+              </div>
+            </div>
+            <div class="card pl-4 pr-4">
+              <div class="profile flex items-center gap-2">
+                <img
+                  class="w-12 h-12 rounded-full object-cover"
+                  src="./icon/chad.jpg"
+                  alt="chad"
+                />
+                <div class="profile-info">
+                  <div class="name flex gap-1 items-center">
+                    <h2 class="hover:underline font-bold">Chad Men</h2>
+                    <span>
+                      <object
+                        class="w-4"
+                        data="./icon/bluetick.svg"
+                        type=""
+                      ></object>
+                    </span>
+                  </div>
+                  <p class="text-zinc-500">@officialChad</p>
+                </div>
+              </div>
+              <div class="follow">
+                <button class="follow-btn">Follow</button>
+              </div>
+            </div>
+            <div class="card pl-4 pr-4">
+              <div class="profile flex items-center gap-2">
+                <img
+                  class="w-12 h-12 rounded-full object-cover"
+                  src="./icon/chad.jpg"
+                  alt="chad"
+                />
+                <div class="profile-info">
+                  <div class="name flex gap-1 items-center">
+                    <h2 class="hover:underline font-bold">Chad Men</h2>
+                    <span>
+                      <object
+                        class="w-4"
+                        data="./icon/bluetick.svg"
+                        type=""
+                      ></object>
+                    </span>
+                  </div>
+                  <p class="text-zinc-500">@officialChad</p>
+                </div>
+              </div>
+              <div class="follow">
+                <button class="follow-btn">Follow</button>
+              </div>
+            </div>
+            <div class="card pl-4">
+              <p class="text-blue-400">Show More</p>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div
+              class="footer-link text-[13px] text-zinc-500 flex flex-wrap gap-x-1.5 ml-2 gap-y-1 w-3/4"
+            >
+              <a class="hover:underline" href="">Term of service</a> |
+              <a class="hover:underline" href="">Privacy Policy </a> |
+              <a class="hover:underline" href=""> Cookie Policy</a> |
+              <a class="hover:underline" href="">Accessibility </a> |
+              <a class="hover:underline" href=""> Ads info </a> |
+              <a class="hover:underline" href=""> More</a> |
+              <p>
+                'X' by
+                <a
+                  href="https://github.com/virat-pod"
+                  target="_blank"
+                  class="hover:underline hover:text-white"
+                  >ViratPod</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
