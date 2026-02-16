@@ -7,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-950: oklch(25.8% 0.092 26.042);
     --color-green-300: oklch(87.1% 0.15 154.449);
@@ -27,6 +29,8 @@
     --color-zinc-600: oklch(44.2% 0.017 285.786);
     --color-zinc-700: oklch(37% 0.013 285.805);
     --color-zinc-900: oklch(21% 0.006 285.885);
+    --color-neutral-700: oklch(37.1% 0 0);
+    --color-neutral-800: oklch(26.9% 0 0);
     --color-neutral-900: oklch(20.5% 0 0);
     --color-black: #000;
     --color-white: #fff;
@@ -254,6 +258,9 @@
   .mt-1\.5 {
     margin-top: calc(var(--spacing) * 1.5);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -287,9 +294,6 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-45 {
-    height: calc(var(--spacing) * 45);
-  }
   .h-\[1\.2px\] {
     height: 1.2px;
   }
@@ -305,8 +309,8 @@
   .h-full {
     height: 100%;
   }
-  .max-h-80 {
-    max-height: calc(var(--spacing) * 80);
+  .min-h-\[80px\] {
+    min-height: 80px;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -358,9 +362,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-70 {
-    max-width: calc(var(--spacing) * 70);
   }
   .max-w-\[1400px\] {
     max-width: 1400px;
@@ -460,9 +461,6 @@
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
   }
-  .overflow-hidden {
-    overflow: hidden;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -520,6 +518,15 @@
   .bg-green-800 {
     background-color: var(--color-green-800);
   }
+  .bg-red-400 {
+    background-color: var(--color-red-400);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -528,9 +535,6 @@
   }
   .bg-zinc-600 {
     background-color: var(--color-zinc-600);
-  }
-  .object-contain {
-    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
@@ -731,12 +735,6 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .text-ellipsis {
-    text-overflow: ellipsis;
-  }
-  .whitespace-nowrap {
-    white-space: nowrap;
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -833,6 +831,20 @@
       }
     }
   }
+  .hover\:bg-neutral-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-neutral-700);
+      }
+    }
+  }
+  .hover\:bg-neutral-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-neutral-800);
+      }
+    }
+  }
   .hover\:bg-neutral-900 {
     &:hover {
       @media (hover: hover) {
@@ -910,9 +922,54 @@
       }
     }
   }
+  .active\:bg-blue-950 {
+    &:active {
+      background-color: var(--color-blue-950);
+    }
+  }
+  .active\:bg-green-950 {
+    &:active {
+      background-color: var(--color-green-950);
+    }
+  }
+  .active\:bg-neutral-700 {
+    &:active {
+      background-color: var(--color-neutral-700);
+    }
+  }
+  .active\:bg-red-950 {
+    &:active {
+      background-color: var(--color-red-950);
+    }
+  }
+  .active\:bg-zinc-400 {
+    &:active {
+      background-color: var(--color-zinc-400);
+    }
+  }
+  .active\:text-blue-400 {
+    &:active {
+      color: var(--color-blue-400);
+    }
+  }
+  .active\:text-green-600 {
+    &:active {
+      color: var(--color-green-600);
+    }
+  }
+  .active\:text-red-600 {
+    &:active {
+      color: var(--color-red-600);
+    }
+  }
   .sm\:sticky {
     @media (width >= 40rem) {
       position: sticky;
+    }
+  }
+  .sm\:mt-0 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 0);
     }
   }
   .sm\:block {
@@ -923,11 +980,6 @@
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
-    }
-  }
-  .sm\:h-60 {
-    @media (width >= 40rem) {
-      height: calc(var(--spacing) * 60);
     }
   }
   .sm\:h-screen {
@@ -943,11 +995,6 @@
   .sm\:w-22 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 22);
-    }
-  }
-  .sm\:max-w-full {
-    @media (width >= 40rem) {
-      max-width: 100%;
     }
   }
   .sm\:flex-col {
@@ -1171,6 +1218,9 @@
         background-color: var(--color-zinc-900);
       }
     }
+    &:active {
+      background-color: var(--color-zinc-900);
+    }
   }
   .post-image {
     max-height: calc(var(--spacing) * 80);
@@ -1197,6 +1247,9 @@
         background-color: var(--color-neutral-900);
       }
     }
+    &:active {
+      background-color: var(--color-neutral-900);
+    }
   }
   .card-more {
     padding-left: calc(var(--spacing) * 0.5);
@@ -1217,6 +1270,9 @@
       @media (hover: hover) {
         background-color: var(--color-gray-200);
       }
+    }
+    &:active {
+      background-color: var(--color-gray-200);
     }
     @media (width >= 80rem) {
       padding: calc(var(--spacing) * 1);

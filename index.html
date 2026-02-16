@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="shortcut icon" href="./icon/x.svg" type="image/x-icon" />
+    <title>X | By ViratPod</title>
+    <link rel="shortcut icon" href="./assets/icon/x.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -27,7 +27,7 @@
           </button>
         </div>
         <div
-          class="logo invert w-full flex justify-center ml-1 md:ml-0 md:pr-4.5 xl:pl-2 xl:justify-start"
+          class="logo invert w-full flex justify-center mt-2 sm:mt-0 ml-1 md:ml-0 md:pr-4.5 xl:pl-2 xl:justify-start"
         >
           <a href="./index.html"
             ><svg
@@ -87,7 +87,6 @@
             </li>
 
             <li class="flex pt-2 w-full">
-              <!-- Desktop Button -->
               <button
                 class="hidden xl:block w-full bg-white text-black text-xl font-medium py-3 rounded-full hover:bg-zinc-200 transition-colors duration-100 cursor-pointer"
               >
@@ -107,9 +106,10 @@
         <div
           class="main-profile hover:bg-zinc-900 transition-colors duration-150 p-1 xl:p-2.5 xl:px-4 xl:mt-9 cursor-pointer rounded-full items-center xl:w-full justify-center sm:justify-start xl:justify-between sm:hidden xl:flex"
         >
-          <!-- Profile Info -->
           <div class="profile-all-info flex items-center gap-2">
-            <div class="profile-pic flex text-center">
+            <div
+              class="profile-pic hover:bg-neutral-800 active:bg-neutral-700 rounded-full p-0.5 flex text-center"
+            >
               <img
                 class="w-16 xl:w-12 rounded-full"
                 src="./assets/icon/chad.jpg"
@@ -117,14 +117,12 @@
               />
             </div>
 
-            <!-- Hide text on small screens -->
             <div class="main-profile-info hidden xl:flex flex-col">
               <h2 class="font-medium text-sm xl:text-base">ChadMen</h2>
               <p class="text-zinc-500 text-xs xl:text-sm">@chadMen2012</p>
             </div>
           </div>
 
-          <!-- Three dots (only desktop) -->
           <div class="hidden xl:block">
             <div class="material-symbols-outlined text-zinc-300 !text-[1.2rem]">
               more_horiz
@@ -191,7 +189,7 @@
 
             <div class="post-btn mb-2 flex text-center justify-center">
               <button
-                class="py-1.5 hover:bg-zinc-400 transition-colors duration-300 cursor-pointer px-4.5 rounded-4xl bg-zinc-500 text-black font-medium"
+                class="py-1.5 hover:bg-zinc-400 active:bg-zinc-400 transition-colors duration-300 cursor-pointer px-4.5 rounded-4xl bg-zinc-500 text-black font-medium"
               >
                 Post
               </button>
@@ -211,7 +209,7 @@
                   alt=""
                 />
               </div>
-              <div class="social-info flex flex-col w-full">
+              <div class="social-info flex flex-col justify-between w-full">
                 <div class="flex items-center gap-1">
                   <span class="font-semibold">Elon Musk</span>
 
@@ -223,7 +221,7 @@
 
                   <span class="text-zinc-600">@elonmusk</span>
                 </div>
-                <div class="post-info flex flex-col gap-2 pb-3">
+                <div class="post-info flex flex-col gap-2 pb-3 min-h-[80px]">
                   <p class="post-title max-w-full">
                     I spent 44$ billion on this app and lizard boy just decided
                     to hit copy and paste. It's personal now. See you in the
@@ -234,19 +232,19 @@
                   <div class="btns flex w-2/4">
                     <ul class="flex text-center text-[0.8rem] gap-4.5 sm:gap-8">
                       <li
-                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-blue-400 active:text-blue-400 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full"
                         >
                           comment </span
                         ><span class="py-0.5">107</span>
                       </li>
                       <li
-                        class="flex text-center gap-0.5 hover:text-green-600 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-green-600 active:text-green-600 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 active:bg-green-950 px-1 h-fit py-1 rounded-full"
                         >
                           repeat </span
                         ><span class="py-0.5">4</span>
@@ -255,7 +253,7 @@
                         class="flex text-center gap-0.5 hover:text-red-600 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 active:bg-red-950 px-1 h-fit py-1 rounded-full"
                         >
                           favorite </span
                         ><span class="py-0.5">56</span>
@@ -264,7 +262,7 @@
                         class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full"
                         >
                           bar_chart </span
                         ><span class="py-0.5">302</span>
@@ -273,12 +271,12 @@
                   </div>
                   <div class="share flex gap-4">
                     <span
-                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
                     >
                       bookmark
                     </span>
                     <span
-                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
                     >
                       share
                     </span>
@@ -322,51 +320,51 @@
                   <div class="btns flex w-2/4">
                     <ul class="flex text-center text-[0.8rem] gap-4.5 sm:gap-8">
                       <li
-                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-blue-400 active:text-blue-400 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full"
                         >
                           comment </span
-                        ><span class="py-0.5">2.1M</span>
+                        ><span class="py-0.5">2M</span>
                       </li>
                       <li
-                        class="flex text-center gap-0.5 hover:text-green-600 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-green-600 active:text-green-600 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 active:bg-green-950 px-1 h-fit py-1 rounded-full"
                         >
                           repeat </span
-                        ><span class="py-0.5">17</span>
+                        ><span class="py-0.5">7</span>
                       </li>
                       <li
-                        class="flex text-center gap-0.5 hover:text-red-600 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-red-600 active:text-red-600 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 active:bg-red-950 px-1 h-fit py-1 rounded-full"
                         >
                           favorite </span
-                        ><span class="py-0.5">56L</span>
+                        ><span class="py-0.5">5L</span>
                       </li>
                       <li
-                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-blue-400 active:text-blue-400 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full"
                         >
                           bar_chart </span
-                        ><span class="py-0.5">1B+</span>
+                        ><span class="py-0.5">1B</span>
                       </li>
                     </ul>
                   </div>
                   <div class="share flex gap-4">
                     <span
-                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
                     >
                       bookmark
                     </span>
                     <span
-                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
                     >
                       share
                     </span>
@@ -410,37 +408,37 @@
                   <div class="btns flex w-2/4">
                     <ul class="flex text-center text-[0.8rem] gap-4.5 sm:gap-8">
                       <li
-                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-blue-400 active:text-blue-400 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full"
                         >
                           comment </span
-                        ><span class="py-0.5">2m+</span>
+                        ><span class="py-0.5">1m</span>
                       </li>
                       <li
-                        class="flex text-center gap-0.5 hover:text-green-600 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-green-600 active:text-green-600 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-green-950 active:bg-green-950 px-1 h-fit py-1 rounded-full"
                         >
                           repeat </span
-                        ><span class="py-0.5">12L</span>
+                        ><span class="py-0.5">9L</span>
                       </li>
                       <li
-                        class="flex text-center gap-0.5 hover:text-red-600 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-red-600 active:text-red-600 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-red-950 active:bg-red-950 px-1 h-fit py-1 rounded-full"
                         >
                           favorite </span
                         ><span class="py-0.5">2.1B</span>
                       </li>
                       <li
-                        class="flex text-center gap-0.5 hover:text-blue-400 cursor-pointer"
+                        class="flex text-center gap-0.5 hover:text-blue-400 active:text-blue-400 cursor-pointer"
                       >
                         <span
-                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full"
+                          class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full"
                         >
                           bar_chart </span
                         ><span class="py-0.5">5B</span>
@@ -449,12 +447,12 @@
                   </div>
                   <div class="share flex gap-4">
                     <span
-                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
                     >
                       bookmark
                     </span>
                     <span
-                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
+                      class="material-symbols-outlined !text-[1rem] hover:bg-blue-950 active:bg-blue-950 px-1 h-fit py-1 rounded-full cursor-pointer"
                     >
                       share
                     </span>
@@ -469,7 +467,7 @@
       <div
         class="mobile-footer sm:hidden h-[6.5vh] fixed bottom-0 w-full bg-black/85"
       >
-        <ul class="h-full px-6 flex justify-between items-center">
+        <ul class="h-full px-6 flex justify-between items-center text-zinc-300">
           <li class="">
             <span class="material-symbols-outlined icons"> home </span>
           </li>
