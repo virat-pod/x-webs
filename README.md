@@ -7,12 +7,13 @@ This project focuses on **mobile-first design, responsive layouts, flexbox, and 
 
 ## 📂 Project Structure
 
+
 x-com-ui/
 ├─ index.html
 ├─ css/
-│   └─ output.css
+│ └─ output.css
 └─ assets/
-    └─ icons/
+└─ icons/
 
 ---
 
